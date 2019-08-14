@@ -58,7 +58,7 @@ void reconnect() {
 
     if (client.connect(clientId.c_str())){
       Serial.println("connected");
-      client.subscribe("MQTT Examples2");
+      client.subscribe("MQTT Examples");
     } else {
       Serial.print("failed, rc=");
       Serial.print(client.state());
